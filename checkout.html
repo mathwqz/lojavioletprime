@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="checkout-page">
+        <h1>Detalhes do Pedido</h1>
+        <form id="checkout-form">
+            <!-- Nome Completo -->
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!-- E-mail -->
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Endereço -->
+            <div class="form-group">
+                <label for="address">Endereço</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <!-- Complemento -->
+            <div class="form-group">
+                <label for="complement">Complemento</label>
+                <input type="text" id="complement" name="complement" placeholder="Informações adicionais, referências, etc.">
+            </div>
+
+            <!-- CEP -->
+            <div class="form-group">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" maxlength="8" required placeholder="Digite o CEP">
+            </div>
+
+            <!-- Checkbox de Confirmação -->
+            <div class="form-group">
+                <label for="age-confirmation">
+                    <input type="checkbox" id="age-confirmation"> Eu confirmo que tenho 18 anos ou mais.
+                </label>
+            </div>
+
+            <!-- Mensagem de Erro -->
+            <p id="error-message" style="color: red; display: none;">Por favor, confirme que tem 18 anos ou mais.</p>
+
+            <!-- Botão de Finalizar Compra -->
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

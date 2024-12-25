@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">Administração</h1>
+        <nav class="nav">
+            <a href="index.html">Loja</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-section">
+            <h2>Gerenciar Produtos</h2>
+            <div id="admin-products"></div>
+            <h3>Adicionar Novo Produto</h3>
+            <form id="add-product-form">
+                <input type="text" id="product-name" placeholder="Nome do Produto" required>
+                <input type="number" id="product-price" placeholder="Preço (R$)" required>
+                <input type="url" id="product-image" placeholder="URL da Imagem" required>
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        manageProducts();
+    </script>
+</body>
+</html>
